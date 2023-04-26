@@ -1,0 +1,11 @@
+INSERT INTO GASTO
+  (COD_GASTO,VALOR,ID_USUARIO,PAGAMENTO,DATA,DESCRICAO)
+VALUES
+  (
+		{{ Select_Tipo_Gasto.selectedOptionValue}},
+    {{ Valor.value }},
+		{{ Usuario.selectedOptionValue}},
+		{{ FormaPagamento.selectedOptionValue}},
+		{{ Data.formattedDate }},
+		{{ Input_descricao.text}}
+	);

@@ -1,0 +1,450 @@
+{
+  "unpublishedPage": {
+    "name": "Cadastro de Tipo de Gasto",
+    "slug": "cadastro-de-tipo-de-gasto",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 590,
+          "containerStyle": "none",
+          "snapRows": 52,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 78,
+          "minHeight": 540,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 65,
+              "widgetName": "EnviarCopy",
+              "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
+              "buttonColor": "#dc2626",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 52,
+              "bottomRow": 59,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 24,
+              "animateLoading": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 2,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "92pfxj61h2",
+              "isDeprecated": false,
+              "rightColumn": 17,
+              "iconName": "undo",
+              "widgetId": "gna1c0a4k4",
+              "minWidth": 50,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 61,
+              "responsiveBehavior": "hug",
+              "originalTopRow": 69,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 20,
+              "originalBottomRow": 76,
+              "buttonVariant": "SECONDARY"
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+              "onSubmit": "",
+              "topRow": 1,
+              "labelWidth": 5,
+              "type": "INPUT_WIDGET_V2",
+              "animateLoading": true,
+              "resetOnSubmit": true,
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                }
+              ],
+              "labelStyle": "BOLD",
+              "inputType": "TEXT",
+              "isDisabled": false,
+              "isRequired": false,
+              "dynamicHeight": "FIXED",
+              "iconName": "add",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "showStepArrows": false,
+              "isVisible": true,
+              "version": 2,
+              "isLoading": false,
+              "borderRadius": "1.5rem",
+              "mobileBottomRow": 22,
+              "widgetName": "Nome_Gasto",
+              "displayName": "Input",
+              "searchTags": [
+                "form",
+                "text input",
+                "number",
+                "textarea"
+              ],
+              "bottomRow": 10,
+              "parentRowSpace": 10,
+              "autoFocus": false,
+              "hideCard": false,
+              "mobileRightColumn": 31,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "labelPosition": "Top",
+              "labelTextColor": "#18181b",
+              "key": "aecxjjlc6a",
+              "labelTextSize": "0.875rem",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "widgetId": "kb3i3n4l8n",
+              "minWidth": 450,
+              "label": "Informe o novo gasto",
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 15,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 11,
+              "maxDynamicHeight": 9000,
+              "iconAlign": "right",
+              "defaultText": "",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "multiRowSelection": false,
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": false,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 16,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "primaryColumns.COD_GASTO.computedValue"
+                },
+                {
+                  "key": "primaryColumns.DESCRICAO_GASTO.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 1,
+              "delimiter": ",",
+              "variant": "VARIANT3",
+              "defaultSelectedRowIndex": 0,
+              "showInlineEditingOptionDropdown": true,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1682431250763,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "mobileBottomRow": 39,
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "COD_GASTO",
+                "DESCRICAO_GASTO"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 51,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85,
+                "COD_GASTO": 153
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 34,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "COD_GASTO": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "COD_GASTO",
+                  "id": "COD_GASTO",
+                  "alias": "COD_GASTO",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "COD_GASTO",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"COD_GASTO\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "DESCRICAO_GASTO": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "DESCRICAO_GASTO",
+                  "id": "DESCRICAO_GASTO",
+                  "alias": "DESCRICAO_GASTO",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "DESCRICAO_GASTO",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"DESCRICAO_GASTO\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "q2ead27nop",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "textSize": "0.875rem",
+              "widgetId": "vsyj4o34ry",
+              "allowAddNewRow": false,
+              "minWidth": 450,
+              "tableData": "{{select_gastos.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "serverSidePaginationEnabled": true,
+              "renderMode": "CANVAS",
+              "mobileTopRow": 11,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 0,
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "resetFormOnClick": true,
+              "boxShadow": "none",
+              "mobileBottomRow": 16,
+              "widgetName": "Button1",
+              "onClick": "{{Input_novo_gasto.run();\nresetWidget(\"Nome_Gasto\", true);}}",
+              "buttonColor": "#dc2626",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 11,
+              "bottomRow": 15,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 36,
+              "animateLoading": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Cadastrar",
+              "isDisabled": false,
+              "key": "i8esschgwt",
+              "isDeprecated": false,
+              "rightColumn": 18,
+              "isDefaultClickDisabled": true,
+              "widgetId": "8putf2b0mm",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 12,
+              "responsiveBehavior": "hug",
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 20,
+              "buttonVariant": "SECONDARY",
+              "placement": "CENTER"
+            },
+            {
+              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "mobileBottomRow": 15,
+              "widgetName": "IconButton1",
+              "onClick": "{{select_gastos.run()}}",
+              "buttonColor": "#dc2626",
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 11,
+              "bottomRow": 15,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 63,
+              "animateLoading": true,
+              "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 51,
+              "dynamicBindingPathList": [],
+              "isDisabled": false,
+              "key": "92pfxj61h2",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "iconName": "reset",
+              "widgetId": "imnev4log1",
+              "minWidth": 50,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 11,
+              "responsiveBehavior": "hug",
+              "borderRadius": "1.5rem",
+              "mobileLeftColumn": 59,
+              "buttonVariant": "SECONDARY"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Cadastro de Tipo de Gasto_select_gastos",
+              "name": "select_gastos",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "Cadastro de Tipo de Gasto",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "6447c5714826665d41c9eb09_6447dba5ee66965586de9cce"
+}

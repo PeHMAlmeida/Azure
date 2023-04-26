@@ -1,0 +1,68 @@
+{
+  "pages": [
+    {
+      "id": "Home",
+      "isDefault": true
+    },
+    {
+      "id": "Cadastro de Gasto",
+      "isDefault": false
+    },
+    {
+      "id": "Cadastro de Tipo de Gasto",
+      "isDefault": false
+    },
+    {
+      "id": "Cadastro Forma de Pagamento",
+      "isDefault": false
+    },
+    {
+      "id": "Lista de Gastos",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "publishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "light",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
+  "color": "#F5D1D1",
+  "icon": "bar-graph",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "publishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}

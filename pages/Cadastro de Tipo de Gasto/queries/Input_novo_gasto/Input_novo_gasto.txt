@@ -1,0 +1,6 @@
+insert into TPO_GASTO(DESCRICAO_GASTO)
+
+VALUES
+  (
+    {{ Nome_Gasto.inputText }}
+  );

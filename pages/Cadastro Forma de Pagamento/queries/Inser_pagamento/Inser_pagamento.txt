@@ -1,0 +1,4 @@
+insert into TPO_PAGAMENTO(DESCRICAO_PAGAMENTO)
+VALUES(
+{{ Tipo_pagamento.inputText }}
+);
