@@ -30,7 +30,7 @@
               "mobileBottomRow": 65,
               "widgetName": "EnviarCopy",
               "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
               "searchTags": [
@@ -50,16 +50,19 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 3,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "buttonColor"
                 }
               ],
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 18,
+              "rightColumn": 16,
               "iconName": "undo",
               "widgetId": "2cm0w0cjxv",
               "minWidth": 50,
@@ -81,7 +84,7 @@
               "mobileBottomRow": 15,
               "widgetName": "IconButton1",
               "onClick": "{{Lista_de_gastos.run();\ntotal_mes_atual.run();\nmes_anterior.run()}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
               "searchTags": [
@@ -101,12 +104,16 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 46,
-              "dynamicBindingPathList": [],
+              "leftColumn": 47,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 62,
+              "rightColumn": 63,
               "iconName": "reset",
               "widgetId": "yap31jprku",
               "minWidth": 50,
@@ -117,12 +124,12 @@
               "isLoading": false,
               "mobileTopRow": 11,
               "responsiveBehavior": "hug",
-              "borderRadius": "1.5rem",
+              "borderRadius": "0px",
               "mobileLeftColumn": 59,
               "buttonVariant": "SECONDARY"
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -140,9 +147,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "primaryColumns.xn__Descrio_do_Gasto_jnb5e.computedValue"
@@ -430,7 +434,7 @@
               "verticalAlignment": "CENTER"
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -448,9 +452,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "primaryColumns.Gasto_Mes_Atual.computedValue"
@@ -565,7 +566,7 @@
               "verticalAlignment": "CENTER"
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
@@ -583,9 +584,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "primaryColumns.Gasto_Mes_Anterior.computedValue"

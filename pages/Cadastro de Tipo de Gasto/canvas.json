@@ -26,11 +26,11 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 65,
               "widgetName": "EnviarCopy",
               "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
               "searchTags": [
@@ -50,16 +50,19 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 2,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "buttonColor"
                 }
               ],
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 17,
+              "rightColumn": 8,
               "iconName": "undo",
               "widgetId": "gna1c0a4k4",
               "minWidth": 50,
@@ -77,7 +80,7 @@
               "buttonVariant": "SECONDARY"
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "",
               "topRow": 1,
@@ -89,6 +92,9 @@
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
+                },
+                {
+                  "key": "labelTextColor"
                 }
               ],
               "labelStyle": "BOLD",
@@ -102,7 +108,7 @@
               "isVisible": true,
               "version": 2,
               "isLoading": false,
-              "borderRadius": "1.5rem",
+              "borderRadius": "0px",
               "mobileBottomRow": 22,
               "widgetName": "Nome_Gasto",
               "displayName": "Input",
@@ -124,7 +130,7 @@
                 }
               ],
               "labelPosition": "Top",
-              "labelTextColor": "#18181b",
+              "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
               "key": "aecxjjlc6a",
               "labelTextSize": "0.875rem",
               "isDeprecated": false,
@@ -144,7 +150,7 @@
               "minDynamicHeight": 4
             },
             {
-              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "multiRowSelection": false,
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
@@ -163,9 +169,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "boxShadow"
                 },
                 {
                   "key": "primaryColumns.COD_GASTO.computedValue"
@@ -322,11 +325,11 @@
             },
             {
               "resetFormOnClick": true,
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 16,
               "widgetName": "Button1",
               "onClick": "{{Input_novo_gasto.run();\nresetWidget(\"Nome_Gasto\", true);}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -349,7 +352,7 @@
               "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
-                  "key": "borderRadius"
+                  "key": "buttonColor"
                 }
               ],
               "text": "Cadastrar",
@@ -369,17 +372,17 @@
               "mobileTopRow": 12,
               "responsiveBehavior": "hug",
               "disabledWhenInvalid": false,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "0px",
               "mobileLeftColumn": 20,
               "buttonVariant": "SECONDARY",
               "placement": "CENTER"
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 15,
               "widgetName": "IconButton1",
               "onClick": "{{select_gastos.run()}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
               "searchTags": [
@@ -399,8 +402,12 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 51,
-              "dynamicBindingPathList": [],
+              "leftColumn": 57,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,

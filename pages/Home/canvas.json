@@ -32,7 +32,7 @@
               "mobileBottomRow": 14,
               "widgetName": "Button1",
               "onClick": "{{navigateTo('Cadastro de Tipo de Gasto', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -54,7 +54,11 @@
                 }
               ],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
               "text": "Cadastro de Categoria de Gasto",
               "isDisabled": false,
               "key": "i8esschgwt",
@@ -87,7 +91,7 @@
               "mobileBottomRow": 14,
               "widgetName": "Button1Copy",
               "onClick": "{{navigateTo('Cadastro Forma de Pagamento', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -109,7 +113,11 @@
                 }
               ],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
               "text": "Cadastro de Categoria de Pagamento",
               "isDisabled": false,
               "key": "i8esschgwt",
@@ -142,7 +150,7 @@
               "mobileBottomRow": 14,
               "widgetName": "Button1CopyCopy",
               "onClick": "{{navigateTo('Cadastro de Gasto', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -164,7 +172,11 @@
                 }
               ],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
               "text": "Cadastro de Gasto",
               "isDisabled": false,
               "key": "i8esschgwt",
@@ -197,7 +209,7 @@
               "mobileBottomRow": 14,
               "widgetName": "Button1CopyCopyCopy",
               "onClick": "{{navigateTo('Lista de Gastos', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -218,7 +230,11 @@
                 }
               ],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                }
+              ],
               "text": "Lista de Gastos",
               "isDisabled": false,
               "key": "i8esschgwt",

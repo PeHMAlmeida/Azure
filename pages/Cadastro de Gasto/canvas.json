@@ -26,7 +26,7 @@
           "leftColumn": 0,
           "children": [
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
               "labelText": "Tipo de Gasto\n",
               "topRow": 16,
@@ -57,7 +57,7 @@
               "isVisible": true,
               "version": 1,
               "isLoading": false,
-              "borderRadius": "0.375rem",
+              "borderRadius": "0px",
               "mobileBottomRow": 8,
               "widgetName": "Select_Tipo_Gasto",
               "isFilterable": false,
@@ -71,7 +71,7 @@
               "mobileRightColumn": 20,
               "dynamicTriggerPathList": [],
               "labelPosition": "Top",
-              "labelTextColor": "#3f3f46",
+              "labelTextColor": "#18181b",
               "key": "nn8xzf1t2t",
               "labelTextSize": "0.875rem",
               "isDeprecated": false,
@@ -88,7 +88,7 @@
               "minDynamicHeight": 4
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 26,
               "widgetName": "Usuario",
               "isFilterable": true,
@@ -143,13 +143,13 @@
               "isLoading": false,
               "mobileTopRow": 19,
               "responsiveBehavior": "fill",
-              "borderRadius": "0.375rem",
+              "borderRadius": "0px",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
               "minDynamicHeight": 4
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 34,
               "widgetName": "FormaPagamento",
               "isFilterable": true,
@@ -204,13 +204,13 @@
               "isLoading": false,
               "mobileTopRow": 27,
               "responsiveBehavior": "fill",
-              "borderRadius": "0.375rem",
+              "borderRadius": "0px",
               "mobileLeftColumn": 0,
               "maxDynamicHeight": 9000,
               "minDynamicHeight": 4
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "topRow": 56,
               "labelWidth": 5,
@@ -233,7 +233,7 @@
               "isVisible": true,
               "version": 2,
               "isLoading": false,
-              "borderRadius": "0.375rem",
+              "borderRadius": "0px",
               "originalBottomRow": 66,
               "mobileBottomRow": 42,
               "widgetName": "Input_descricao",
@@ -313,11 +313,11 @@
               "enableRotation": false
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 65,
               "widgetName": "Enviar",
               "onClick": "{{Insert_gasto.run();\nresetWidget(\"Select_Tipo_Gasto\", true);\nresetWidget(\"Valor\", true);\nresetWidget(\"Usuario\", true);\nresetWidget(\"FormaPagamento\", true);\nresetWidget(\"Data\", true);\nresetWidget(\"Input_descricao\", true);}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
               "searchTags": [
@@ -340,7 +340,7 @@
               "leftColumn": 47,
               "dynamicBindingPathList": [
                 {
-                  "key": "borderRadius"
+                  "key": "buttonColor"
                 }
               ],
               "isDisabled": false,
@@ -358,17 +358,17 @@
               "mobileTopRow": 61,
               "responsiveBehavior": "hug",
               "originalTopRow": 69,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "0px",
               "mobileLeftColumn": 20,
               "originalBottomRow": 76,
               "buttonVariant": "SECONDARY"
             },
             {
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 65,
               "widgetName": "EnviarCopy",
               "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
-              "buttonColor": "#dc2626",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
               "searchTags": [
@@ -391,7 +391,7 @@
               "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
-                  "key": "borderRadius"
+                  "key": "buttonColor"
                 }
               ],
               "isDisabled": false,
@@ -409,13 +409,13 @@
               "mobileTopRow": 61,
               "responsiveBehavior": "hug",
               "originalTopRow": 69,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "borderRadius": "0px",
               "mobileLeftColumn": 20,
               "originalBottomRow": 76,
               "buttonVariant": "SECONDARY"
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "iconSVG": "/static/media/icon.f312efcb48ce4dafb08c20291635b30b.svg",
               "topRow": 24,
               "defaultCurrencyCode": "BRL",
@@ -439,7 +439,7 @@
               "allowCurrencyChange": false,
               "version": 1,
               "isLoading": false,
-              "borderRadius": "0.375rem",
+              "borderRadius": "0px",
               "mobileBottomRow": 31,
               "widgetName": "Valor",
               "displayName": "Currency Input",
