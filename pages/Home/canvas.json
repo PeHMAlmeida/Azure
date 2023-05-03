@@ -28,11 +28,12 @@
           "children": [
             {
               "resetFormOnClick": false,
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 14,
               "widgetName": "Button1",
               "onClick": "{{navigateTo('Cadastro de Tipo de Gasto', {}, 'SAME_WINDOW');}}",
               "buttonColor": "#dc2626",
+              "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -82,11 +83,12 @@
             },
             {
               "resetFormOnClick": false,
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 14,
               "widgetName": "Button1Copy",
               "onClick": "{{navigateTo('Cadastro Forma de Pagamento', {}, 'SAME_WINDOW');}}",
               "buttonColor": "#dc2626",
+              "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -136,11 +138,12 @@
             },
             {
               "resetFormOnClick": false,
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 14,
               "widgetName": "Button1CopyCopy",
               "onClick": "{{navigateTo('Cadastro de Gasto', {}, 'SAME_WINDOW');}}",
               "buttonColor": "#dc2626",
+              "dynamicPropertyPathList": [],
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
               "searchTags": [
@@ -190,7 +193,7 @@
             },
             {
               "resetFormOnClick": false,
-              "boxShadow": "none",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 14,
               "widgetName": "Button1CopyCopyCopy",
               "onClick": "{{navigateTo('Lista de Gastos', {}, 'SAME_WINDOW');}}",
@@ -249,7 +252,7 @@
               "type": "TEXT_WIDGET",
               "animateLoading": true,
               "overflow": "NONE",
-              "fontFamily": "Roboto",
+              "fontFamily": "Rubik",
               "leftColumn": 10,
               "dynamicBindingPathList": [
                 {
@@ -272,6 +275,7 @@
               "fontSize": "3rem",
               "mobileBottomRow": 83,
               "widgetName": "Text1",
+              "dynamicPropertyPathList": [],
               "displayName": "Text",
               "searchTags": [
                 "typography",
