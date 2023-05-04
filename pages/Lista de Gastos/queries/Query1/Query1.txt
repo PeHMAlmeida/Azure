@@ -1,2 +1,0 @@
-DECLARE @data DATETIME = GETDATE();
-SELECT DATEADD(DD, -DAY(DATEADD(M, 1, @data)), DATEADD(M, 1, @data)) AS UltimoDiaMes;
