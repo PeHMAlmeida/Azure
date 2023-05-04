@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(VALOR) as 'Gasto Mes Atual' FROM GASTO\nWHERE MONTH(data) = DATEPART(mm,GETDATE());",
+      "body": "SELECT SUM(VALOR) as 'Gasto Mês Atual' FROM GASTO\nWHERE MONTH(data) = DATEPART(mm,GETDATE());",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

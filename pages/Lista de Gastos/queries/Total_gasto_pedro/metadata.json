@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mssql-plugin",
   "unpublishedAction": {
-    "name": "mes_anterior",
+    "name": "Total_gasto_pedro",
     "datasource": {
       "name": "ConexaoAzureV2",
       "pluginId": "mssql-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT SUM(VALOR) as 'Gasto Mês Anterior' FROM GASTO\nWHERE MONTH(data) = DATEPART(mm,GETDATE())-1;",
+      "body": "--Gasto Pedro\nSELECT SUM(VALOR) as 'Gasto Total Pedro' FROM GASTO\nWHERE ID_USUARIO = 2;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Lista de Gastos_mes_anterior",
+  "id": "Lista de Gastos_Total_gasto_pedro",
   "deleted": false,
-  "gitSyncId": "6447c5714826665d41c9eb09_6452e9c9a501941ca5d9295c"
+  "gitSyncId": "6447c5714826665d41c9eb09_6452f2a0af9c5f232ca2a22d"
 }

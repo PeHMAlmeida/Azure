@@ -1,0 +1,3 @@
+--Gasto Pedro
+SELECT SUM(VALOR) as 'Gasto Total Pedro' FROM GASTO
+WHERE ID_USUARIO = 2;

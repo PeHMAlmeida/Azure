@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 420,
+          "bottomRow": 540,
           "containerStyle": "none",
           "snapRows": 52,
           "parentRowSpace": 1,
@@ -83,7 +83,7 @@
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 15,
               "widgetName": "IconButton1",
-              "onClick": "{{Lista_de_gastos.run();\ntotal_mes_atual.run();\nmes_anterior.run()}}",
+              "onClick": "{{Lista_de_gastos.run();\ntotal_mes_atual.run();\nmes_anterior.run();\nTotal_gasto_pedro.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -168,11 +168,11 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 0,
+              "leftColumn": 2,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-              "isVisibleFilters": true,
+              "isVisibleFilters": false,
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 1,
@@ -219,7 +219,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 32,
+              "bottomRow": 33,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -283,7 +283,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "VALOR",
+                  "label": "Valor",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"VALOR\"]))}}",
@@ -313,7 +313,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "NOME",
+                  "label": "Nome",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"NOME\"]))}}",
@@ -373,7 +373,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "DATA",
+                  "label": "Data",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"DATA\"]))}}",
@@ -403,7 +403,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "DESCRICAO",
+                  "label": "Descrição",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"DESCRICAO\"]))}}",
@@ -415,7 +415,7 @@
               "key": "q2ead27nop",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 62,
               "textSize": "0.875rem",
               "widgetId": "9lkj744gvr",
               "minWidth": 450,
@@ -438,7 +438,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 33,
+              "topRow": 34,
               "isSortable": false,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -454,11 +454,11 @@
                   "key": "borderRadius"
                 },
                 {
-                  "key": "primaryColumns.Gasto_Mes_Atual.computedValue"
+                  "key": "primaryColumns.xn__Gasto_Ms_Atual_wkb.computedValue"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 0,
+              "leftColumn": 2,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "showInlineEditingOptionDropdown": true,
@@ -493,19 +493,19 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1683154860105,
+              "columnUpdatedAt": 1683158167073,
               "defaultSelectedRowIndices": [
                 0
               ],
               "mobileBottomRow": 61,
-              "widgetName": "Table2",
+              "widgetName": "Gasto_mes_atual",
               "defaultPageSize": 0,
               "columnOrder": [
-                "Gasto_Mes_Atual"
+                "xn__Gasto_Ms_Atual_wkb"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 42,
+              "bottomRow": 43,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -517,14 +517,14 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "Gasto_Mes_Atual": {
+                "xn__Gasto_Ms_Atual_wkb": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
                   "index": 0,
                   "width": 150,
-                  "originalId": "Gasto Mes Atual",
-                  "id": "Gasto_Mes_Atual",
-                  "alias": "Gasto Mes Atual",
+                  "originalId": "Gasto Mês Atual",
+                  "id": "xn__Gasto_Ms_Atual_wkb",
+                  "alias": "Gasto Mês Atual",
                   "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -537,10 +537,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Gasto Mes Atual",
+                  "label": "Gasto Mês Atual",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Mes Atual\"]))}}",
+                  "computedValue": "{{Gasto_mes_atual.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Mês Atual\"]))}}",
                   "sticky": "",
                   "validation": {}
                 }
@@ -548,7 +548,7 @@
               "key": "9c1zrykk3l",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 27,
+              "rightColumn": 29,
               "textSize": "0.875rem",
               "widgetId": "70eclete1n",
               "minWidth": 450,
@@ -570,7 +570,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 33,
+              "topRow": 34,
               "isSortable": false,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -586,11 +586,11 @@
                   "key": "borderRadius"
                 },
                 {
-                  "key": "primaryColumns.Gasto_Mes_Anterior.computedValue"
+                  "key": "primaryColumns.xn__Gasto_Ms_Anterior_ztb.computedValue"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 34,
+              "leftColumn": 35,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -624,19 +624,19 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1683155435125,
+              "columnUpdatedAt": 1683158167229,
               "defaultSelectedRowIndices": [
                 0
               ],
               "mobileBottomRow": 71,
-              "widgetName": "Table3",
+              "widgetName": "Gasto_mes_anterior",
               "defaultPageSize": 0,
               "columnOrder": [
-                "Gasto_Mes_Anterior"
+                "xn__Gasto_Ms_Anterior_ztb"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 42,
+              "bottomRow": 43,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -648,20 +648,18 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "Gasto_Mes_Anterior": {
+                "xn__Gasto_Ms_Anterior_ztb": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
                   "index": 0,
                   "width": 150,
-                  "originalId": "Gasto Mes Anterior",
-                  "id": "Gasto_Mes_Anterior",
-                  "alias": "Gasto Mes Anterior",
+                  "originalId": "Gasto Mês Anterior",
+                  "id": "xn__Gasto_Ms_Anterior_ztb",
+                  "alias": "Gasto Mês Anterior",
                   "horizontalAlignment": "CENTER",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
+                  "columnType": "number",
                   "textSize": "0.875rem",
-                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
@@ -670,19 +668,18 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Gasto Mes Anterior",
+                  "label": "Gasto Mês Anterior",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table3.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Mes Anterior\"]))}}",
+                  "computedValue": "{{Gasto_mes_anterior.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Mês Anterior\"]))}}",
                   "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
+                  "validation": {}
                 }
               },
               "key": "9c1zrykk3l",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 62,
               "textSize": "0.875rem",
               "widgetId": "kdobvaottn",
               "minWidth": 450,
@@ -698,14 +695,298 @@
               "mobileLeftColumn": 0,
               "isVisiblePagination": false,
               "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": false,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 45,
+              "isSortable": false,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": true,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "primaryColumns.Gasto_Total_Pedro.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 2,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1683157911683,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "mobileBottomRow": 71,
+              "widgetName": "Gasto_total_pedro",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Gasto_Total_Pedro"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 54,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 34,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "Gasto_Total_Pedro": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "Gasto Total Pedro",
+                  "id": "Gasto_Total_Pedro",
+                  "alias": "Gasto Total Pedro",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Gasto Total Pedro",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Gasto_total_pedro.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Total Pedro\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "5pozdz2nl4",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 29,
+              "textSize": "0.875rem",
+              "widgetId": "delq0yrk96",
+              "minWidth": 450,
+              "tableData": "{{Total_gasto_pedro.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 43,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 0,
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
+            },
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "borderColor": "#E0DEDE",
+              "isVisibleDownload": false,
+              "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
+              "topRow": 45,
+              "isSortable": true,
+              "type": "TABLE_WIDGET_V2",
+              "inlineEditingSaveOption": "ROW_LEVEL",
+              "animateLoading": false,
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "primaryColumns.Gasto_Total_Paula.computedValue"
+                }
+              ],
+              "needsHeightForContent": true,
+              "leftColumn": 35,
+              "delimiter": ",",
+              "defaultSelectedRowIndex": 0,
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": false,
+              "isVisible": true,
+              "enableClientSideSearch": true,
+              "version": 1,
+              "totalRecordsCount": 0,
+              "isLoading": false,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "editActions": {
+                  "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1683158024959,
+              "defaultSelectedRowIndices": [
+                0
+              ],
+              "mobileBottomRow": 81,
+              "widgetName": "Gasto_total_paula",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Gasto_Total_Paula"
+              ],
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "bottomRow": 54,
+              "columnWidthMap": {
+                "task": 245,
+                "step": 70,
+                "status": 85
+              },
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 34,
+              "dynamicTriggerPathList": [],
+              "borderWidth": "1",
+              "primaryColumns": {
+                "Gasto_Total_Paula": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 0,
+                  "width": 150,
+                  "originalId": "Gasto Total Paula",
+                  "id": "Gasto_Total_Paula",
+                  "alias": "Gasto Total Paula",
+                  "horizontalAlignment": "CENTER",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Gasto Total Paula",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Gasto_total_paula.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Total Paula\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                }
+              },
+              "key": "5pozdz2nl4",
+              "canFreezeColumn": true,
+              "isDeprecated": false,
+              "rightColumn": 62,
+              "textSize": "0.875rem",
+              "widgetId": "u3hycwpjhk",
+              "minWidth": 450,
+              "tableData": "{{Gasto_Total_Paula.data}}",
+              "label": "Data",
+              "searchKey": "",
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 53,
+              "horizontalAlignment": "CENTER",
+              "isVisibleSearch": false,
+              "responsiveBehavior": "fill",
+              "mobileLeftColumn": 0,
+              "isVisiblePagination": false,
+              "verticalAlignment": "CENTER"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
+              "id": "Lista de Gastos_Gasto_Total_Paula",
+              "name": "Gasto_Total_Paula",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
               "id": "Lista de Gastos_Lista_de_gastos",
               "name": "Lista_de_gastos",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Lista de Gastos_Total_gasto_pedro",
+              "name": "Total_gasto_pedro",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

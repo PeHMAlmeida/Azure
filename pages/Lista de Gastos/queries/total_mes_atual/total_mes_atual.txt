@@ -1,2 +1,2 @@
-SELECT SUM(VALOR) as 'Gasto Mes Atual' FROM GASTO
+SELECT SUM(VALOR) as 'Gasto Mês Atual' FROM GASTO
 WHERE MONTH(data) = DATEPART(mm,GETDATE());
