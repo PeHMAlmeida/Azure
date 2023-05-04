@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 580,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 52,
           "parentRowSpace": 1,
@@ -37,8 +37,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 51,
-              "bottomRow": 58,
+              "topRow": 62,
+              "bottomRow": 69,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
@@ -50,11 +50,8 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 1,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
-                {
-                  "key": "borderRadius"
-                },
                 {
                   "key": "buttonColor"
                 }
@@ -62,9 +59,9 @@
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 16,
+              "rightColumn": 8,
               "iconName": "undo",
-              "widgetId": "7say2vi532",
+              "widgetId": "2uzi5ff63g",
               "minWidth": 50,
               "isVisible": true,
               "version": 1,
@@ -73,22 +70,95 @@
               "isLoading": false,
               "mobileTopRow": 61,
               "responsiveBehavior": "hug",
-              "originalTopRow": 69,
-              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalTopRow": 65,
+              "borderRadius": "0px",
               "mobileLeftColumn": 20,
-              "originalBottomRow": 76,
+              "originalBottomRow": 72,
               "buttonVariant": "SECONDARY"
+            },
+            {
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "topRow": 0,
+              "type": "TEXT_WIDGET",
+              "animateLoading": false,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "textColor"
+                },
+                {
+                  "key": "backgroundColor"
+                },
+                {
+                  "key": "borderColor"
+                }
+              ],
+              "text": "Tipo de Pagamento\n",
+              "textAlign": "CENTER",
+              "dynamicHeight": "AUTO_HEIGHT_WITH_LIMITS",
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "{{appsmith.theme.colors.backgroundColor}}",
+              "version": 1,
+              "isLoading": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "originalBottomRow": 7,
+              "fontSize": "3rem",
+              "mobileBottomRow": 13,
+              "widgetName": "Text2",
+              "displayName": "Text",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "hideCard": false,
+              "mobileRightColumn": 37,
+              "shouldScrollContents": true,
+              "parentColumnSpace": 13.9375,
+              "dynamicTriggerPathList": [],
+              "shouldTruncate": false,
+              "borderWidth": "",
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "key": "zufq4j70lv",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
+              "widgetId": "i0bamq0ujw",
+              "minWidth": 450,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "mobileTopRow": 9,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 0,
+              "mobileLeftColumn": 21,
+              "maxDynamicHeight": 9,
+              "minDynamicHeight": 4
             },
             {
               "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
               "onSubmit": "",
-              "topRow": 0,
+              "topRow": 9,
               "labelWidth": 5,
               "type": "INPUT_WIDGET_V2",
               "animateLoading": true,
               "resetOnSubmit": true,
-              "leftColumn": 1,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "accentColor"
@@ -109,6 +179,7 @@
               "version": 2,
               "isLoading": false,
               "borderRadius": "0px",
+              "originalBottomRow": 18,
               "mobileBottomRow": 22,
               "widgetName": "Tipo_pagamento",
               "displayName": "Input",
@@ -118,7 +189,7 @@
                 "number",
                 "textarea"
               ],
-              "bottomRow": 9,
+              "bottomRow": 18,
               "parentRowSpace": 10,
               "autoFocus": false,
               "hideCard": false,
@@ -132,9 +203,9 @@
               "labelPosition": "Top",
               "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
               "key": "aecxjjlc6a",
-              "labelTextSize": "0.875rem",
+              "labelTextSize": "1.25rem",
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 61,
               "widgetId": "u3b2l5nccl",
               "minWidth": 450,
               "label": "Informe novo meio de pagamento",
@@ -143,6 +214,7 @@
               "renderMode": "CANVAS",
               "mobileTopRow": 15,
               "responsiveBehavior": "fill",
+              "originalTopRow": 9,
               "mobileLeftColumn": 11,
               "maxDynamicHeight": 9000,
               "iconAlign": "right",
@@ -162,8 +234,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 11,
-              "bottomRow": 15,
+              "topRow": 20,
+              "bottomRow": 26,
               "parentRowSpace": 10,
               "type": "BUTTON_WIDGET",
               "hideCard": false,
@@ -175,7 +247,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 1,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -188,7 +260,7 @@
               "isDisabled": false,
               "key": "i8esschgwt",
               "isDeprecated": false,
-              "rightColumn": 18,
+              "rightColumn": 20,
               "isDefaultClickDisabled": true,
               "widgetId": "wv1v4o7jou",
               "minWidth": 120,
@@ -200,9 +272,11 @@
               "isLoading": false,
               "mobileTopRow": 12,
               "responsiveBehavior": "hug",
+              "originalTopRow": 20,
               "disabledWhenInvalid": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 20,
+              "originalBottomRow": 26,
               "buttonVariant": "PRIMARY",
               "placement": "CENTER"
             },
@@ -218,8 +292,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 12,
-              "bottomRow": 16,
+              "topRow": 20,
+              "bottomRow": 26,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
@@ -231,7 +305,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 57,
+              "leftColumn": 55,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -240,7 +314,7 @@
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 61,
               "iconName": "reset",
               "widgetId": "ljjs5v1s1y",
               "minWidth": 50,
@@ -251,16 +325,18 @@
               "isLoading": false,
               "mobileTopRow": 11,
               "responsiveBehavior": "hug",
+              "originalTopRow": 20,
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 59,
+              "originalBottomRow": 26,
               "buttonVariant": "SECONDARY"
             },
             {
-              "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-              "borderColor": "#E0DEDE",
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleDownload": false,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 17,
+              "topRow": 28,
               "isSortable": false,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -277,10 +353,13 @@
                 },
                 {
                   "key": "primaryColumns.DESCRICAO_PAGAMENTO.computedValue"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 1,
+              "leftColumn": 3,
               "delimiter": ",",
               "variant": "VARIANT3",
               "defaultSelectedRowIndex": 0,
@@ -316,6 +395,7 @@
               },
               "borderRadius": "0.375rem",
               "columnUpdatedAt": 1682440114513,
+              "originalBottomRow": 59,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -329,7 +409,7 @@
               "dynamicPropertyPathList": [],
               "compactMode": "DEFAULT",
               "displayName": "Table",
-              "bottomRow": 50,
+              "bottomRow": 59,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -351,10 +431,10 @@
                   "id": "COD_PAGAMENTO",
                   "alias": "COD_PAGAMENTO",
                   "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
+                  "verticalAlignment": "BOTTOM",
                   "columnType": "number",
                   "textColor": "",
-                  "textSize": "0.875rem",
+                  "textSize": "1rem",
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
@@ -381,10 +461,10 @@
                   "id": "DESCRICAO_PAGAMENTO",
                   "alias": "DESCRICAO_PAGAMENTO",
                   "horizontalAlignment": "CENTER",
-                  "verticalAlignment": "CENTER",
+                  "verticalAlignment": "BOTTOM",
                   "columnType": "text",
                   "textColor": "",
-                  "textSize": "0.875rem",
+                  "textSize": "1rem",
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
@@ -406,8 +486,8 @@
               "key": "q2ead27nop",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 64,
-              "textSize": "0.875rem",
+              "rightColumn": 61,
+              "textSize": "1rem",
               "widgetId": "1ig3sowqx6",
               "minWidth": 450,
               "tableData": "{{Query_Tipo_de_pagamento.data}}",
@@ -420,9 +500,10 @@
               "horizontalAlignment": "CENTER",
               "isVisibleSearch": false,
               "responsiveBehavior": "fill",
+              "originalTopRow": 28,
               "mobileLeftColumn": 0,
               "isVisiblePagination": false,
-              "verticalAlignment": "CENTER"
+              "verticalAlignment": "BOTTOM"
             }
           ]
         },

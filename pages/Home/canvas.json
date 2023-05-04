@@ -76,11 +76,11 @@
               "isLoading": false,
               "mobileTopRow": 10,
               "responsiveBehavior": "hug",
-              "originalTopRow": 20,
+              "originalTopRow": 42,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 20,
-              "originalBottomRow": 31,
+              "originalBottomRow": 53,
               "buttonVariant": "SECONDARY",
               "iconAlign": "left",
               "placement": "CENTER"
@@ -135,11 +135,11 @@
               "isLoading": false,
               "mobileTopRow": 10,
               "responsiveBehavior": "hug",
-              "originalTopRow": 32,
+              "originalTopRow": 53,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 20,
-              "originalBottomRow": 43,
+              "originalBottomRow": 64,
               "buttonVariant": "SECONDARY",
               "iconAlign": "left",
               "placement": "CENTER"
@@ -194,11 +194,11 @@
               "isLoading": false,
               "mobileTopRow": 10,
               "responsiveBehavior": "hug",
-              "originalTopRow": 44,
+              "originalTopRow": 31,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 20,
-              "originalBottomRow": 55,
+              "originalBottomRow": 42,
               "buttonVariant": "SECONDARY",
               "iconAlign": "left",
               "placement": "CENTER"
@@ -252,17 +252,17 @@
               "isLoading": false,
               "mobileTopRow": 10,
               "responsiveBehavior": "hug",
-              "originalTopRow": 56,
+              "originalTopRow": 20,
               "disabledWhenInvalid": false,
               "borderRadius": "1.5rem",
               "mobileLeftColumn": 20,
-              "originalBottomRow": 67,
+              "originalBottomRow": 31,
               "buttonVariant": "SECONDARY",
               "iconAlign": "left",
               "placement": "CENTER"
             },
             {
-              "borderColor": "transparent",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "topRow": 0,
               "type": "TEXT_WIDGET",
@@ -276,6 +276,9 @@
                 },
                 {
                   "key": "borderRadius"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "text": "Controle \nde\nGastos",

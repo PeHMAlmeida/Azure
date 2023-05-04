@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "--Gasto Pedro\nSELECT SUM(VALOR) as 'Gasto Total Pedro' FROM GASTO\nWHERE ID_USUARIO = 2;",
+      "body": "--Gasto Pedro\nSELECT SUM(VALOR) as 'Gasto Total Pedro' FROM GASTO\nWHERE ID_USUARIO = 2\nAND MONTH(data) = DATEPART(mm,GETDATE());",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
