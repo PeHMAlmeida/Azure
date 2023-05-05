@@ -50,7 +50,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 1,
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -62,7 +62,7 @@
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 16,
+              "rightColumn": 7,
               "iconName": "undo",
               "widgetId": "2cm0w0cjxv",
               "minWidth": 50,
@@ -83,7 +83,7 @@
               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
               "mobileBottomRow": 15,
               "widgetName": "IconButton1",
-              "onClick": "{{Lista_de_gastos.run();\ntotal_mes_atual.run();\nmes_anterior.run();\nTotal_gasto_pedro.run();\nGasto_Total_Paula.run();\nGasto_por_mes.run();\nGasto_por_meio_de_pagamento.run()}}",
+              "onClick": "{{Lista_de_gastos.run();\ntotal_mes_atual.run();\nmes_anterior.run();\nTotal_gasto_pedro.run();\nGasto_Total_Paula.run();\nGasto_por_mes.run();\nGasto_por_meio_de_pagamento.run();\nGasto_por_tipo_de_pagamento.run()}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -104,7 +104,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 47,
+              "leftColumn": 57,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -113,7 +113,7 @@
               "isDisabled": false,
               "key": "92pfxj61h2",
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 62,
               "iconName": "reset",
               "widgetId": "yap31jprku",
               "minWidth": 50,
@@ -549,7 +549,7 @@
                   "label": "Gasto Mês Atual",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Gasto_mes_atual.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Mês Atual\"]))}}",
+                  "computedValue": "{{Gasto_mes_atual.processedTableData.map((currentRow, currentIndex) => ( 'R$ ' + currentRow[\"Gasto Mês Atual\"]))}}",
                   "sticky": "",
                   "validation": {}
                 }
@@ -682,7 +682,7 @@
                   "label": "Gasto Mês Anterior",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Gasto_mes_anterior.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Mês Anterior\"]))}}",
+                  "computedValue": "{{Gasto_mes_anterior.processedTableData.map((currentRow, currentIndex) => ( 'R$ ' + currentRow[\"Gasto Mês Anterior\"]))}}",
                   "sticky": "",
                   "validation": {}
                 }
@@ -817,7 +817,7 @@
                   "label": "Gasto Total Pedro",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Gasto_total_pedro.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Total Pedro\"]))}}",
+                  "computedValue": "{{Gasto_total_pedro.processedTableData.map((currentRow, currentIndex) => ( 'R$ ' + currentRow[\"Gasto Total Pedro\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -953,7 +953,7 @@
                   "label": "Gasto Total Paula",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Gasto_total_paula.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Gasto Total Paula\"]))}}",
+                  "computedValue": "{{Gasto_total_paula.processedTableData.map((currentRow, currentIndex) => ( 'R$ ' + currentRow[\"Gasto Total Paula\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1542,7 +1542,7 @@
               },
               "key": "mxffbctl9h",
               "isDeprecated": false,
-              "rightColumn": 33,
+              "rightColumn": 31,
               "widgetId": "sccaaqlsk3",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "minWidth": 450,
@@ -1560,6 +1560,118 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 0,
               "xAxisName": "Forma de Pagamento",
+              "originalBottomRow": 136,
+              "chartType": "PIE_CHART"
+            },
+            {
+              "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+              "mobileBottomRow": 169,
+              "widgetName": "Chart4",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
+              "searchTags": [
+                "graph",
+                "visuals",
+                "visualisations"
+              ],
+              "topRow": 96,
+              "bottomRow": 136,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 24,
+              "chartData": {
+                "9pvhunniry": {
+                  "seriesName": "Sales",
+                  "data": "{{Gasto_por_tipo_de_pagamento.data.map( (obj) =>{ return  {'x': obj.DESCRICAO_GASTO, 'y': obj.TOTAL } })}}"
+                }
+              },
+              "animateLoading": true,
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "chartData.9pvhunniry.data"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "fontFamily"
+                }
+              ],
+              "leftColumn": 33,
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ],
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion",
+                    "alignCaptionWithCanvas": 1,
+                    "captionFontSize": "24",
+                    "captionAlignment": "center",
+                    "captionPadding": "20",
+                    "captionFontColor": "#231F20",
+                    "legendIconSides": "4",
+                    "legendIconBgAlpha": "100",
+                    "legendIconAlpha": "100",
+                    "legendPosition": "top",
+                    "canvasPadding": "0",
+                    "chartLeftMargin": "20",
+                    "chartTopMargin": "10",
+                    "chartRightMargin": "40",
+                    "chartBottomMargin": "10",
+                    "xAxisNameFontSize": "14",
+                    "labelFontSize": "12",
+                    "labelFontColor": "#716e6e",
+                    "xAxisNameFontColor": "#716e6e",
+                    "yAxisNameFontSize": "14",
+                    "yAxisValueFontSize": "12",
+                    "yAxisValueFontColor": "#716e6e",
+                    "yAxisNameFontColor": "#716e6e"
+                  }
+                }
+              },
+              "key": "mxffbctl9h",
+              "isDeprecated": false,
+              "rightColumn": 62,
+              "widgetId": "0ququ5uocp",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 137,
+              "responsiveBehavior": "fill",
+              "yAxisName": "Valor (R$)",
+              "originalTopRow": 96,
+              "chartName": "Gastos por Categoria",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 0,
+              "xAxisName": "Categoria",
               "originalBottomRow": 136,
               "chartType": "PIE_CHART"
             }
@@ -1620,6 +1732,14 @@
             {
               "id": "Lista de Gastos_Gasto_por_mes",
               "name": "Gasto_por_mes",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Lista de Gastos_Gasto_por_tipo_de_pagamento",
+              "name": "Gasto_por_tipo_de_pagamento",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

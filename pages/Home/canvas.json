@@ -262,7 +262,7 @@
               "placement": "CENTER"
             },
             {
-              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
+              "borderColor": "transparent",
               "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
               "topRow": 0,
               "type": "TEXT_WIDGET",
@@ -276,9 +276,6 @@
                 },
                 {
                   "key": "borderRadius"
-                },
-                {
-                  "key": "borderColor"
                 }
               ],
               "text": "Controle \nde\nGastos",
